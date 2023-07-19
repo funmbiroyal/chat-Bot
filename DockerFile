@@ -1,0 +1,5 @@
+FROM openjdk:8
+
+COPY target/e-learn.jar e-learn.jar
+
+ENTRYPOINT["java","-jar", "/e-learn.jar"]
